@@ -1,0 +1,48 @@
+.service-card {
+    margin-top: -17px;
+    position: relative
+}
+
+.service-card img {
+    width: 311px;
+    height: 160px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 7px;
+    object-fit: cover;
+}
+
+.service-card h4 {
+    background: #249C7F;
+    border-radius: 5px;
+    color: #FCFCFC;
+    font-weight: 600;
+    padding-left: 12px;
+    height: 56px;
+    line-height: 56px;
+    position: relative;
+    bottom: 33px;
+    transition: all 1s;
+}
+
+.service-card:hover h4 {
+    height: 145px;
+
+}
+
+.service-card p {
+    position: absolute;
+    bottom: 17px;
+    left: 15px;
+    color: #FCFCFC;
+    line-height: 20px;
+    font-weight: 300;
+    font-size: 0.9rem;
+    width: 84%;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.service-card:hover h4 p {
+    opacity: 1;
+}

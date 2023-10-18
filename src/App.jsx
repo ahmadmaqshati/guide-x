@@ -4,18 +4,26 @@
  1-home 2-about us & contact 3-membership 4-jobs 5-guide
  ========= 
   */
-import HealthImgeDiscr from './HealthImgeDiscr'
-import HealthImge from './HealthImge'
-import NavBar from './NavBar'
-import Button from './Button'
-import Guidances from './Guidances'
-import { GuidData } from './GuidData'
-import Guide from './Guide'
-import Services from './Services'
-import { ServicesData } from './ServicesData'
+import HealthImgeDiscr from './home suction/HealthImgeDiscr'
+import HealthImge from './home suction/HealthImge'
+import NavBar from './home suction/NavBar'
+import Button from './home suction/Button'
+/* import Guidances from './Guidances' */
+import Guidances from './home suction/Guidances'
+import { GuidData } from './home suction/GuidData'
+import Guide from './home suction/Guide'
+import Services from './home suction/Services'
+import { ServicesData } from './home suction/ServicesData'
 /* import ShowTheHospitalLogo from './ShowTheHospitalLogo' */
-import Background from './Background'
-import Footer from './Footer'
+import Background from './home suction/Background'
+import Footer from './home suction/Footer'
+import AboutUsNavBar from './About Suction/AboutUsNavBar'
+import AboutUsbackground from './About Suction/AboutUsbackground'
+import AboutUsExplain from './About Suction/AboutUsExplain'
+import './home suction/Services.css'
+import AboutBackGround from './About Suction/AboutBackGround'
+
+
 
 function App() {
   /*
@@ -31,15 +39,16 @@ function App() {
    bring data for Services Componant 
    ==================================
    */
-  const servicesDataaMapping = ServicesData.map((e) => <Services img={e.img} discr={e.discr} key={e.id} />)
+  const servicesDataaMapping = ServicesData.map((e) => <Services img={e.img} serviceType={e.serviceType} key={e.id} />)
 
 
 
 
   return (
-    /* --------------------------------home suction----------------------------------*/
-    < div className='App' >
-      <div style={{ width: '90%', margin: '0 auto' }}>
+
+    < div className='App' >{/* App */}
+      {/*--------------------------------home suction----------------------------------*/}
+      <div>
         <NavBar /> {/*NavBard-componant-calling*/}
       </div>
 
@@ -53,7 +62,7 @@ function App() {
 
 
       <div style={{
-        display: 'flex'/* , justifyContent: 'space-between' */, alignItems: 'center', gap: '15px', flexWrap: 'wrap', width: '91%', margin: '0 auto'
+        display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '15px', flexWrap: 'wrap', width: '91%', margin: '0 auto'
 
       }}>
 
@@ -70,10 +79,9 @@ function App() {
 
       </div>
       <div>
-
         <Background />
-
       </div>
+
       <div style={{
         width: '90%', margin: '0 auto', color: '#14364D'
       }}>
@@ -81,17 +89,24 @@ function App() {
         {servicesDataaMapping}
       </div>
       <Footer />
+      {/* ///////////////////////////////home suction//////////////////////////////////*/}
+
+      {/* --------------------------------About suction----------------------------------*/}
+      <AboutUsNavBar />
+      <AboutUsbackground />
+      <AboutUsExplain />
+      <AboutBackGround />
+      {/* ///////////////////////////////About suction//////////////////////////////////*/}
 
 
-    </div >
-    /* ///////////////////////////////home suction//////////////////////////////////*/
+
+
+    </div >/*///App///*/
 
   )
+
+
 }
 
 export default App
-
-
-
-
 
