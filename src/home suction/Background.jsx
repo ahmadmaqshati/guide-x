@@ -15,9 +15,9 @@ export default function Background(props) {
             <div style={{ display: 'flex', width: '90%', margin: '0 auto', gap: '16px', alignItems: 'center', paddingTop: '26px' }}>
                 <ShowTheHospitalLogo img='imges/Smouha.png' />
                 <ShowTheHospitalLogo img='imges/Smouha.png' />
-                {/*   <ShowTheHospitalLogo img='imges/Smouha.png' />
                 <ShowTheHospitalLogo img='imges/Smouha.png' />
-                <ShowTheHospitalLogo img='imges/Smouha.png' /> */}
+                <ShowTheHospitalLogo img='imges/Smouha.png' />
+                <ShowTheHospitalLogo img='imges/Smouha.png' />
 
             </div>
 

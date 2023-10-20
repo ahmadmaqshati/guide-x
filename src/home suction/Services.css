@@ -4,12 +4,14 @@
 }
 
 .service-card img {
-    width: 311px;
-    height: 160px;
+    /* width: 311px; */
+    max-width: 90%;
+    /*  height: 160px; */
     margin: 0 auto;
     display: block;
     border-radius: 7px;
     object-fit: cover;
+
 }
 
 .service-card h4 {

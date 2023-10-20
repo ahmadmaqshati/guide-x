@@ -17,11 +17,12 @@ import { ServicesData } from './home suction/ServicesData'
 /* import ShowTheHospitalLogo from './ShowTheHospitalLogo' */
 import Background from './home suction/Background'
 import Footer from './home suction/Footer'
-import AboutUsNavBar from './About Suction/AboutUsNavBar'
-import AboutUsbackground from './About Suction/AboutUsbackground'
-import AboutUsExplain from './About Suction/AboutUsExplain'
+import AboutNavBar from './About Suction/AboutNavBar'
+import AboutBackground from './About Suction/AboutBackground'
+import AboutText from './About Suction/  AboutText'
 import './home suction/Services.css'
-import AboutBackGround from './About Suction/AboutBackGround'
+import CardsContainer from './About Suction/CardsContainer'
+
 
 
 
@@ -92,10 +93,10 @@ function App() {
       {/* ///////////////////////////////home suction//////////////////////////////////*/}
 
       {/* --------------------------------About suction----------------------------------*/}
-      <AboutUsNavBar />
-      <AboutUsbackground />
-      <AboutUsExplain />
-      <AboutBackGround />
+      <AboutNavBar />
+      <AboutBackground />
+      < AboutText />
+      <CardsContainer />
       {/* ///////////////////////////////About suction//////////////////////////////////*/}
 
 

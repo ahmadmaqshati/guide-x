@@ -1,4 +1,4 @@
-export default function AboutUsExplain() {
+export default function AboutText() {
     return (
         <div style={{ width: '90%', margin: '0 auto', color: '#767880', fontWeight: '500' }}>
             <p >
