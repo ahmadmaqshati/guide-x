@@ -1,22 +1,23 @@
 
 export default function AboutCard(props) {
     return (
-        <div style={{ paddingTop: "67px", position: 'relative', marginBottom: '225px' }}>
+        <div style={{ paddingTop: "62px", position: 'relative', marginBottom: '238px' }}>
             {/*----------------------------------img-------------------------------*/}
             <img style={{
                 position: 'absolute',
                 left: props.direc == 'right' ? '0' : '', right: props.direc == 'left' ? '0' : ''
-            }} src="imges/About2.svg" alt="" />
+            }} src={props.img} alt="" />
             {/*==================================img================================*/}
 
             {/*----------------------------------text----------------------------- */}
             <div style={{
                 background: 'rgb(255, 255, 255,0.4)',
-                width: '94%',
+                width: '91%',
                 /*  padding: '0px 36px', */
                 position: 'absolute',
-                top: '129px',
-                padding: '26px 0px 23px 25px',
+                top: '126px',
+
+                padding: '25px 0px 25px 25px',
                 maxWidth: '450px',
                 /*
                 ==================================================================== 

@@ -1,7 +1,7 @@
-import Guide from "./Guide"
+import Guide from "./SpecializationCategory"
 import ShowTheHospitalLogo from "./ShowTheHospitalLogo"
 
-export default function Background(props) {
+export default function Background(/* props */) {
     return (
         <div style={{ backgroundImage: "url('imges/background.png')", height: '274px', marginTop: '40px', marginBottom: '43px', overflow: 'auto ' }}>
 

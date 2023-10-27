@@ -1,6 +1,6 @@
-export default function Guide(props) {
+export default function SpecializationCategory(props) {
     return (
-        <div style={{ paddingBottom: '40px' }}>
+        <div style={{ marginBottom: '40px' }}>
             <h3 style={{ fontWeight: '600' }}>{props.groupName}</h3>
 
         </div>

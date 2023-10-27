@@ -1,4 +1,6 @@
 import FooterIcons from "./FooterIcons"
+import MapIcon from "./MapIcon"
+import { Link } from "react-router-dom"
 export default function Footer() {
     return (
         <div style={{ backgroundImage: "linear-gradient(#225B83,#1A6F5A)", height: '714px' }}>
@@ -17,27 +19,38 @@ export default function Footer() {
 
                 <ul style={{ display: 'flex', justifyContent: 'space-between', width: '79%', fontWeight: '600' }}>
                     <ul style={{ listStyle: 'none', paddingBottom: '30px' }}>
-                        <li><a href="#" style={{ textDecoration: 'none', color: '#FCFCFC', display: 'block', paddingBottom: '5px' }}>Home</a></li>
-                        <li><a href="#" style={{ textDecoration: 'none', color: '#FCFCFC', display: 'block', paddingBottom: '5px' }}>Guide</a></li>
-                        <li><a href="#" style={{ textDecoration: 'none', color: '#FCFCFC', display: 'block', paddingBottom: '5px' }}>Membership</a></li>
+
+                        <li> <Link to='/' style={{ textDecoration: 'none', color: '#FCFCFC', display: 'block', paddingBottom: '5px' }}>Home</Link></li>
+
+
+
+
+                        <li><Link to='/guide' style={{ textDecoration: 'none', color: '#FCFCFC', display: 'block', paddingBottom: '5px' }}>Guide</Link></li>
+
+                        <li><Link to='/members' style={{ textDecoration: 'none', color: '#FCFCFC', display: 'block', paddingBottom: '5px' }}>Membership</Link></li>
+
                     </ul>
+
                     <ul style={{ listStyle: 'none' }} >
-                        <li><a href="#" style={{ textDecoration: 'none', color: '#FCFCFC' }}>About Us</a></li>
-                        <li><a href="#" style={{ textDecoration: 'none', color: '#FCFCFC' }}>Contact Us</a></li>
+                        <li><Link to='/about' style={{ textDecoration: 'none', color: '#FCFCFC' }}>About Us</Link></li>
+
+
+
+                        <li><Link to='/Contact' style={{ textDecoration: 'none', color: '#FCFCFC' }}>Contact Us</Link></li>
+
                         <li><a href="#" style={{ textDecoration: 'none', color: '#FCFCFC' }}>Terms</a></li>
                     </ul>
                 </ul>
 
                 <img src="imges/Contact Us.png" alt="" style={{ paddingBottom: '15px' }} />
 
+                {/*-------------------------Location---------------------------*/}
                 <ul style={{ listStyle: 'none', paddingBottom: '40px' }}>
-                    <li style={{ display: 'flex', alignItems: 'center', paddingBottom: '10px' }}><img src="imges/map.png" alt="" /><a href="#" style={{ color: '#E6E6E6', textDecoration: 'none', paddingLeft: '7px', fontSize: '14px', paddingTop: '3px' }}>455West Orchard Street Kings Mountain</a></li>
+                    <li style={{ display: 'flex', alignItems: 'center', paddingBottom: '10px' }}><MapIcon /><a href="#" style={{ color: '#E6E6E6', textDecoration: 'none', paddingLeft: '7px', fontSize: '14px', paddingTop: '3px' }}>455West Orchard Street Kings Mountain</a></li>
 
-
-
-
+                    {/*-------------------------phone---------------------------*/}
                     <li style={{ display: 'flex', alignItems: 'center', paddingBottom: '10px' }}><img src="imges/b.png" alt="" /><a href="#" style={{ color: '#E6E6E6', textDecoration: 'none', paddingLeft: '7px', fontSize: '14px', paddingTop: '3px' }}>+088(246)642-27-10</a></li>
-
+                    {/*-------------------------Email---------------------------*/}
                     <li><img src="imges/c.png" alt="" /><a href="#" style={{ color: '#E6E6E6', textDecoration: 'none', paddingLeft: '7px', fontSize: '14px' }}>example@gmail.com</a></li>
                 </ul>
 

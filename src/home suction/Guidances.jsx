@@ -7,7 +7,6 @@ export default function Guidances(props) {
             , borderRadius: '15px', padding: '10px 0', marginBottom: '1px'
 
         }}>
-            {/* 0.12rem  */}
             <div style={{ paddingRight: '12px', paddingLeft: '15px' }}>
                 <h1 style={{ fontSize: '25px', color: '#0D2416', fontWeight: '700', }}>{props.numb}</h1>
 

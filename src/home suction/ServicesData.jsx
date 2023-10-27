@@ -1,29 +1,27 @@
 export const ServicesData = [
     {
         id: 1,
-        img: 'imges/about1.jpg',
-        serviceType: 'Development services'
+        img: 'imges/img1.jpeg',
+        serviceType: 'Development services',
+        /* data: 'imges/img1.jpeg' */
+
     },
     {
         id: 2,
-        img: 'imges/about1.jpg',
-        serviceType: 'Technology services'
+        img: 'imges/img2.jpeg',
+        serviceType: 'Technology services',
+        /* data: 'imges/Pharmacy.jpg' */
     },
     {
         id: 3,
-        img: 'imges/about1.jpg',
-        serviceType: 'Administrative services'
+        img: 'imges/img3.jpeg',
+        serviceType: 'Administrative services',
+        /* data: 'imges/Pharmacy.jpg' */
     },
     {
         id: 4,
-        img: 'imges/about1.jpg',
-        serviceType: 'Marketing services'
-    },
-
-    /* discr */
-
-
-
-
-
+        img: 'imges/img4.jpeg',
+        serviceType: 'Marketing services',
+        /* data: 'imges/Pharmacy.jpg' */
+    }
 ]
