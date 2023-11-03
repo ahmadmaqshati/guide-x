@@ -1,8 +1,5 @@
-/* import { Component } from "react" */
-/* import Guide from "./Guide" */
 import './Services.css'
-/* import GuidePage from "../Guide Section/GuidePage" */
-export default function Services(props) {
+export default function ServicesCards(props) {
     return (
 
         <div className="service-card">
@@ -14,12 +11,14 @@ export default function Services(props) {
                 </p>
             </h4>
 
-
-
         </div>
 
 
 
     )
 
-}    
+}
+
+
+
+

@@ -9,11 +9,14 @@ import HealthImge from './HealthImge'
 import NavBar from './NavBar'
 import Button from './Button'
 
+import Inputs from './Inputs'
+
 import Guidances from './Guidances'
 import { GuidData } from './GuidData'
 import SpecializationCategory from './SpecializationCategory'
 
-import Services from './Services'
+/* import ServicesCards from './ServicesCards'  */
+import ServicesList from './ServicesList'
 import { ServicesData } from './ServicesData'
 import Background from './Background'
 import Footer from './Footer'
@@ -42,12 +45,16 @@ function Home() {
      bring data for Services Componant 
      ==================================
      */
-    const servicesDataaMapping = ServicesData.map((e) => <Services img={e.img} serviceType={e.serviceType} key={e.id} />)
-    return (
+    /*  const servicesDataShow = ServicesData.map((service) => <ServicesCards img={service.img} serviceType={service.serviceType} key={service.id} />)
+  */
 
+    return (
         < div className='App' >{/* App */}
 
-            {/*--------------------------------home suction----------------------------------*/}
+
+
+
+            {/*============================homesuction=============================*/}
             <div>
                 <NavBar /> {/*NavBard-componant-calling*/}
             </div>
@@ -57,7 +64,9 @@ function Home() {
             <div style={{ width: '90%', margin: '0 auto' }}>
                 <HealthImgeDiscr /> {/*HealthImgeDiscr-componant-calling*/}
             </div>
-            <div style={{ width: '90%', margin: '0 auto', paddingBottom: '126px' }}>
+
+            <Inputs />
+            <div style={{ width: '90%', margin: '0 auto', paddingBottom: '40px' }}>
                 <Button btnName="Search" /> {/*Button-componant-calling*/}
             </div>
 
@@ -77,7 +86,7 @@ function Home() {
           <Guidances numb='13' guideName='Hospital' guideImg='imges/Ambulance.png' />
           <Guidances numb='13' guideName='Hospital' guideImg='imges/Ambulance.png' /> */}
 
-                {/*////////////////////////data calling by mapping ///////////////////////*/}
+                {/*//////////gma//////////////data calling by mapping ///////////////////////*/}
                 {GuidDataShow}
 
             </div>
@@ -88,15 +97,18 @@ function Home() {
             <div style={{
                 width: '90%', margin: '0 auto', color: '#14364D'
             }}>
-                <SpecializationCategory groupName='Our Services' />{/* SpecializationCategory=Guide */}
-                {servicesDataaMapping}
+                <SpecializationCategory groupName='Our Services' />
+                {/* {servicesDataShow} */}
+                <ServicesList services={ServicesData} />
             </div>
             <Footer />
-            {/* ///////////////////////////////home suction//////////////////////////////////*/}
+            {/* ///////////////////////////////homesuction//////////////////////////*/}
+
 
         </div >/*///App///*/
 
     )
 
 }
+
 export default Home

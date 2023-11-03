@@ -1,4 +1,4 @@
-
+/* 
 export default function GreenMapIcon() {
     return (
 
@@ -16,3 +16,4 @@ export default function GreenMapIcon() {
 
 
 
+ */

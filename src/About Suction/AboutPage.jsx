@@ -4,16 +4,16 @@ import HeaderGreenBackground from './HeaderGreenBackground'
 import AboutText from './AboutText'
 import CardsContainer from './CardsContainer'
 import Guide from '../home suction/SpecializationCategory'
-import Services from '../home suction/Services'
+import ServicesCards from '../home suction/ServicesCards'
 import { ServicesData } from '../home suction/ServicesData'
 import Footer from '../home suction/Footer'
 export default function AboutPage() {
-    const servicesDataaMapping = ServicesData.map((e) => <Services img={e.img} serviceType={e.serviceType} key={e.id} />)
+    const servicesDataaMapping = ServicesData.map((e) => <ServicesCards img={e.img} serviceType={e.serviceType} key={e.id} />)
     return (
 
         <div>
             <AboutNavBar />
-            <HeaderGreenBackground img='imges/About.png' />
+            <HeaderGreenBackground img='imges/AboutUs.png' />
             <AboutText />
             <CardsContainer />
             <div style={{

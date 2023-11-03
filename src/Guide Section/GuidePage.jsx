@@ -1,29 +1,68 @@
 import NavBar from "../home suction/NavBar";
 import HeaderGreenBackground from "../About Suction/HeaderGreenBackground";
 import Button from "../home suction/Button";
-import Services from "../home suction/Services";
+/* import ServicesCards from "../home suction/ServicesCards"; */
+import ServicesList from "../home suction/ServicesList";
+import Inputs from "../home suction/Inputs";
+
 
 import Footer from "../home suction/Footer";
 
 export default function GuidePage() {
+    const GuidePageData = [
+        {
+            id: 1,
+            img: 'imges/Hospitals.jpg',
+            serviceType: 'Hospitals'
+        },
+        {
+            id: 2,
+            img: 'imges/Clinics.webp',
+            serviceType: 'Clinics'
+        },
+        {
+            id: 3,
+            img: 'imges/Pharmacy.jpeg',
+            serviceType: 'Pharmacies'
+        },
+        {
+            id: 4,
+            img: 'imges/Medical.jpg',
+            serviceType: 'Medical Supplies'
+        },
+
+        {
+            id: 5,
+            img: 'imges/Specialized Center.jpg',
+            serviceType: 'Specialized centers'
+        },
+
+        {
+            id: 6,
+            img: 'imges/Home_Care.webp',
+            serviceType: 'Home Care'
+        },
+    ]
+
 
     return (
         <div>
             <NavBar />
-            <HeaderGreenBackground img='imges/Guidee.png' />
+            <div style={{ marginBottom: '25px' }}>
+                <HeaderGreenBackground img='imges/GuideImg.png' />
+            </div>
+
+            <Inputs />
             <div style={{ width: '90%', margin: '0 auto', paddingBottom: '37px' }}>
                 <Button btnName="Search" />
             </div>
 
+
             <div style={{
-                width: '90%', margin: '0 auto', color: '#14364D'
+                width: '100%', margin: '0 auto', color: '#14364D'
             }}>
-                <Services img='imges/Hospitals.jpg' serviceType='Hospitals' />
-                <Services img='imges/Clinics.webp' serviceType='Clinics' />
-                <Services img='imges/Pharmacy.jpeg' serviceType='Pharmacies' />
-                <Services img='imges/Medical.jpg' serviceType='Medical Supplies' />
-                <Services img='imges/Specialized Center.jpg' serviceType='Specialized centers' />
-                <Services img='imges/Home_Care.webp' serviceType='Home Care' />
+                <ServicesList services={GuidePageData} />
+
             </div>
             <Footer />
 

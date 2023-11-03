@@ -1,0 +1,15 @@
+.area:after {
+    content: url(imges/areaImge.png);
+    position: absolute;
+    /*  z-index:9999; */
+    top: 47%;
+    left: 95%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 100%;
+
+}
+
+.textarea {
+    height: 119px;
+}

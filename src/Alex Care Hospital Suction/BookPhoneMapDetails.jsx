@@ -1,22 +1,24 @@
 
-export default function Details(props) {
+export default function BookPhoneMapDetails(props) {
     return (
         <div style={{ width: '90%', margin: '0 auto' }}>
-            <h4>{props.title}</h4>
-            <br />
+            <h4 style={{ color: '#249C7F',/*  position: 'relative', top: '30px', */ fontSize: '0.9rem', fontWeight: '600', padding: '22px 0', }}>{props.title}</h4>
+
             {/*-------------------------------AddressBooks-Item----------------------*/}
             <div style={{ display: 'flex', gap: '11px', paddingBottom: '20px' }}>
-                <div style={{ border: '0px solid #249C7F', height: '32px', minWidth: '32px', borderRadius: '50%', display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative', background: '#E9F5F2' }}>
-                    <img src={props.BookImg} style={{ width: '15.4px', height: '15.33px' }} alt="" />
+                <div style={{ /*  borderRadius: '50%' , display: 'flex', justifyContent: 'center', alignItems: 'center',*/ position: 'relative' }}>
+                    <img src={props.BookImg} alt="" />
 
                 </div>
-                <p style={{ fontSize: '0.8rem', paddingTop: '4px', color: '#15171B', fontWeight: '500' }}>{props.BookParagraph}</p>
+                <p style={{
+                    fontSize: '0.76rem', lineHeight: '30px', paddingTop: '4px', color: '#15171B', fontWeight: '500'
+                }}>{props.BookParagraph}</p>
             </div>
 
             {/*----------------------------------- Map-Item---------------------- */}
             <div style={{ display: 'flex', gap: '11px', paddingBottom: '20px' }}>
-                <div style={{ border: '0px solid #249C7F', height: '32px', width: '32px', borderRadius: '50%', display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative', background: '#E9F5F2' }}>
-                    <img src={props.LocationImg} style={{ width: '22.97px', height: '24.33px' }} alt="" />
+                <div style={{ border: '0px solid #249C7F', height: '32px', width: '32px',/* borderRadius: '50%', display: 'flex', justifyContent: 'center', alignItems: 'center',*/ position: 'relative' }}>
+                    <img src={props.LocationImg} alt="" />
 
                 </div>
                 <p style={{ fontSize: '0.8rem', paddingTop: '4px', color: '#15171B', fontWeight: '500' }}>{props.LocationParagraph}</p>
@@ -24,8 +26,8 @@ export default function Details(props) {
 
             {/*----------------------------------- Phone-Item---------------------- */}
             <div style={{ display: 'flex', gap: '11px', paddingBottom: '20px' }}>
-                <div style={{ border: '0px solid #249C7F', height: '32px', width: '32px', borderRadius: '50%', display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative', background: '#E9F5F2' }}>
-                    <img src={props.PhoneImg} style={{ width: '15.3px', height: '15.33px' }} alt="" />
+                <div style={{ border: '0px solid #249C7F', position: 'relative' }}>
+                    <img src={props.PhoneImg} alt="" />
 
                 </div>
                 <p style={{ fontSize: '0.8rem', paddingTop: '4px', color: '#15171B', fontWeight: '500' }}>{props.PhoneParagraph}</p>
