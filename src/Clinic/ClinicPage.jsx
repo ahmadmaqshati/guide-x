@@ -5,11 +5,11 @@ import SpecializationCategory from "../home suction/SpecializationCategory"
 import Footer from "../home suction/Footer"
 import { dataItem } from "./dataItem"
 import HeaderGreenBackground from "../About Suction/HeaderGreenBackground"
-import Inputs from "../home suction/Inputs";
+import SearchAndFilters from "../home suction/SearchAndFilters";
 
 export default function Clinic() {
     const showDataItem = dataItem.map(function (e) {
-        return (< SpecializationItems img={e.img} title={e.title} img2={e.img2} title2={e.title2} key={e.id} />)
+        return (<SpecializationItems link={e.link}  img={e.img} title={e.title} img2={e.img2} title2={e.title2} key={e.id} />)
 
     })
 
@@ -19,10 +19,10 @@ export default function Clinic() {
 
             <NavBar />
             <div style={{ marginBottom: '25px' }}>
-                <HeaderGreenBackground img='imges/Clinic.png' />
+                <HeaderGreenBackground img='/imges/Clinic.png' />
             </div>
 
-            <Inputs />
+            <SearchAndFilters />
             <div style={{ width: '90%', margin: '0 auto', paddingBottom: '38px' }}>
                 <Button btnName="Search" />
             </div>

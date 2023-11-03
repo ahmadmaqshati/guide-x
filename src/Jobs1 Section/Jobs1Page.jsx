@@ -7,7 +7,7 @@ export default function Jobs1Page() {
     return (
         <div>
             <NavBar />
-            <HeaderGreenBackground img='imges/Jops.png' />
+            <HeaderGreenBackground img='/imges/Jops.png' />
             <div style={{ marginBottom: '35px' }}>
                 <CustomerServices />
                 <CustomerServices />

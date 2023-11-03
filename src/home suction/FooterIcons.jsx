@@ -59,9 +59,9 @@ export default function FooterIcons(props) {
 
 
 
-/*  <div style={{ backgroundImage: "url('imges/circal.png')", height: '40px', backgroundRepeat: 'no-repeat', display: 'flex', justifyContent: 'center', alignItems: 'center', width: '40px' }}>
+/*  <div style={{ backgroundImage: "url('/imges/circal.png')", height: '40px', backgroundRepeat: 'no-repeat', display: 'flex', justifyContent: 'center', alignItems: 'center', width: '40px' }}>
      <div style={{ width: '16px', height: '16px' }} >
-         <img src='imges/instagram.png' alt="" style={{
+         <img src='/imges/instagram.png' alt="" style={{
              width: '100%', height: '100%'
          }} />
 
@@ -69,10 +69,10 @@ export default function FooterIcons(props) {
  </div>
 
  
- <div style={{ backgroundImage: "url('imges/circal.png')", height: '40px', backgroundRepeat: 'no-repeat', display: 'flex', justifyContent: 'center', alignItems: 'center', width: '40px', margin: '1px' }}>
+ <div style={{ backgroundImage: "url('/imges/circal.png')", height: '40px', backgroundRepeat: 'no-repeat', display: 'flex', justifyContent: 'center', alignItems: 'center', width: '40px', margin: '1px' }}>
      <div style={{ width: '16px', height: '16px' }} >
 
-         <img src='imges/Linkedin.png' alt="" style={{
+         <img src='/imges/Linkedin.png' alt="" style={{
              width: '100%', height: '100%'
          }} />
      

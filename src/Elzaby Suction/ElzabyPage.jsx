@@ -9,8 +9,8 @@ export default function ElzabyPage() {
     return (
         <div>
             <NavBar />
-            <HeaderGreenBackground img='imges/ElazabyIcon.png' />
-            <BookPhoneMapDetails title='Hospitals Details' LocationImg='imges/GreenMap.png' LocationParagraph='455 West Orchard  Street Kings Mountain' PhoneImg='imges/GreenPhone.png' PhoneParagraph='+088(246)642-27-10' /* BookImg='imges/GreenAdderessBook.png' BookParagraph='ggghghghghghg' */ />
+            <HeaderGreenBackground img='/imges/ElazabyIcon.png' />
+            <BookPhoneMapDetails title='Hospitals Details' LocationImg='/imges/GreenMap.png' LocationParagraph='455 West Orchard  Street Kings Mountain' PhoneImg='/imges/GreenPhone.png' PhoneParagraph='+088(246)642-27-10' /* BookImg='/imges/GreenAdderessBook.png' BookParagraph='ggghghghghghg' */ />
 
             <div style={{ marginBottom: '15px' }}>
                 <Location />

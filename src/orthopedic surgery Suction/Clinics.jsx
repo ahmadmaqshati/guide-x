@@ -1,7 +1,9 @@
+import { Link } from "react-router-dom";
 
 
-export default function Clinics(props) {
+export default function DrCard(props) {
     return (
+    <Link to={props.link} style={{ color: 'inherit', textDecoration: 'none' }}>
         <div>
             <div style={{ border: '1px solid #EFEFF5', borderRadius: '10px', height: '123px', position: 'relative', paddingTop: '11px', marginBottom: '14px' }}>
                 <img src={props.DrImg}/* "imges/Dr.png" */ alt="" style={{ paddingLeft: '18px', paddingTop: '10px' }} />
@@ -25,7 +27,7 @@ export default function Clinics(props) {
 
 
         </div>
-
+        </Link>
     )
 }
 /*  */

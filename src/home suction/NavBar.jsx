@@ -1,11 +1,15 @@
+import { Link } from "react-router-dom";
+
 export default function NavBar() {
     return (
         <div style={{ height: '103px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' /* width: '90%', margin: '0 auto' */, width: '90%', margin: '0 auto' }}>
 
-            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                <img src="/imges/X.svg" alt="" style={{ width: '33.88px', height: '31px', paddingRight: '7px' }} />
-                <img src="/imges/Guide.png" alt="" />
-            </div>
+            <Link to="/">
+              <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                  <img src="/imges/X.svg" alt="" style={{ width: '33.88px', height: '31px', paddingRight: '7px' }} />
+                  <img src="/imges/Guide.png" alt="" />
+              </div>
+            </Link>
             <img src="imges/menu-icon.svg" alt="" />
 
 

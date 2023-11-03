@@ -1,11 +1,19 @@
 import PlaceInputs from "./PlaceInputs";
 
-export default function Inputs() {
+export default function SearchAndFilters() {
     return (
         <div >
             <div style={{ border: '1px solid #EFEFF5', borderRadius: '5px', width: '90%', height: '48px', lineHeight: '48px', margin: 'auto', display: 'flex', alignItems: 'center', marginBottom: '15px' }}>
-                <img style={{ paddingLeft: '25px' }} src="imges/SearchIcon.png" alt="" />
-                <span style={{ paddingLeft: '15px', color: '#8F8F8F', fontSize: '0.85rem' }}>Search by doctor,hospital </span>
+                <img style={{ margin: '0 10px' }} src="imges/SearchIcon.png" alt="" />
+                <input 
+                  style={{
+                   color: '#8F8F8F', fontSize: '0.85rem' ,
+                    border: 'none',
+            width: '100%',
+            outline: 'none',
+                }} 
+                placeholder="Search by doctor,hospital "
+                />
             </div>
 
 

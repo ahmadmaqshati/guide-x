@@ -29,16 +29,17 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path='/contact' element={<ContactPage />} />
         <Route path='/membership' element={<MembersPage />} />
         <Route path='/guide' element={<GuidePage />} />
-        <Route path='/hospitals/:hospitalName' element={<AlexCareHospitalPage />} />
         <Route path='/hospitals' element={<HospitalsPage />} />
+        <Route path='/hospitals/:hospitalName' element={<AlexCareHospitalPage />} />
 
-        <Route path='/clinic' element={<Clinic />} />
-        <Route path='/orthopedicsurgery' element={<OrthopedicSurgery />} />
-        <Route path='/drdetailspage' element={<DrDetailsPage />} />
+        <Route path='/clincs' element={<Clinic />} />
+        <Route path='/clincs/:clincName' element={<OrthopedicSurgery />} />
+        <Route path='/clincs/:clincName/:doctorName' element={<DrDetailsPage />} />
+
         <Route path='/jobs1Page' element={<Jobs1Page />} />
         <Route path='/jobs2Page' element={<Jobs2Page />} />
-        <Route path='/pharmaciespage' element={<PharmaciesPage />} />
-        <Route path='/elzabypage' element={<ElzabyPage />} />
+        <Route path='/pharmacies' element={<PharmaciesPage />} />
+        <Route path='/pharmacies/:pharmacyName' element={<ElzabyPage />} />
 
 
 

@@ -1,9 +1,12 @@
+import { Link } from "react-router-dom";
 
 
 
 export default function SpecializationItems(props) {
     return (
 
+
+    <Link to={props.link} style={{ color: 'inherit', textDecoration: 'none' }}>
         <div style={{
             display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '17px', position: 'relative', bottom: '18px', paddingBottom: '17px'
         }}>
@@ -23,6 +26,7 @@ export default function SpecializationItems(props) {
 
 
         </div>
+    </Link>
     )
 
 }

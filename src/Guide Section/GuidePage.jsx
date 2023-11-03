@@ -3,7 +3,7 @@ import HeaderGreenBackground from "../About Suction/HeaderGreenBackground";
 import Button from "../home suction/Button";
 /* import ServicesCards from "../home suction/ServicesCards"; */
 import ServicesList from "../home suction/ServicesList";
-import Inputs from "../home suction/Inputs";
+import SearchAndFilters from "../home suction/SearchAndFilters";
 
 
 import Footer from "../home suction/Footer";
@@ -12,34 +12,34 @@ export default function GuidePage() {
     const GuidePageData = [
         {
             id: 1,
-            img: 'imges/Hospitals.jpg',
+            img: '/imges/Hospitals.jpg',
             serviceType: 'Hospitals'
         },
         {
             id: 2,
-            img: 'imges/Clinics.webp',
+            img: '/imges/Clinics.webp',
             serviceType: 'Clinics'
         },
         {
             id: 3,
-            img: 'imges/Pharmacy.jpeg',
+            img: '/imges/Pharmacy.jpeg',
             serviceType: 'Pharmacies'
         },
         {
             id: 4,
-            img: 'imges/Medical.jpg',
+            img: '/imges/Medical.jpg',
             serviceType: 'Medical Supplies'
         },
 
         {
             id: 5,
-            img: 'imges/Specialized Center.jpg',
+            img: '/imges/Specialized Center.jpg',
             serviceType: 'Specialized centers'
         },
 
         {
             id: 6,
-            img: 'imges/Home_Care.webp',
+            img: '/imges/Home_Care.webp',
             serviceType: 'Home Care'
         },
     ]
@@ -49,10 +49,10 @@ export default function GuidePage() {
         <div>
             <NavBar />
             <div style={{ marginBottom: '25px' }}>
-                <HeaderGreenBackground img='imges/GuideImg.png' />
+                <HeaderGreenBackground img='/imges/GuideImg.png' />
             </div>
 
-            <Inputs />
+            <SearchAndFilters />
             <div style={{ width: '90%', margin: '0 auto', paddingBottom: '37px' }}>
                 <Button btnName="Search" />
             </div>

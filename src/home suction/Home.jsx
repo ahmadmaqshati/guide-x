@@ -9,9 +9,9 @@ import HealthImge from './HealthImge'
 import NavBar from './NavBar'
 import Button from './Button'
 
-import Inputs from './Inputs'
+import SearchAndFilters from './SearchAndFilters'
 
-import Guidances from './Guidances'
+import CategoryCard from './Guidances'
 import { GuidData } from './GuidData'
 import SpecializationCategory from './SpecializationCategory'
 
@@ -37,8 +37,8 @@ function Home() {
     bring data for Guidances Componant
     ================================== 
     */
-    const GuidDataShow = GuidData.map((e) =>
-        <Guidances numb={e.numb} guideName={e.guideName} guideImg={e.guideImg} key={e.id} />
+    const GuidDataShow = GuidData.map((item) =>
+        <CategoryCard {...item} key={item.id} />
     )
     /*
      ==================================
@@ -65,7 +65,7 @@ function Home() {
                 <HealthImgeDiscr /> {/*HealthImgeDiscr-componant-calling*/}
             </div>
 
-            <Inputs />
+            <SearchAndFilters />
             <div style={{ width: '90%', margin: '0 auto', paddingBottom: '40px' }}>
                 <Button btnName="Search" /> {/*Button-componant-calling*/}
             </div>
@@ -79,12 +79,12 @@ function Home() {
             }}>
 
                 {/* //////////////////////data calling by props //////////////*/}
-                {/* <Guidances numb='13' guideName='Hospital' guideImg='imges/Ambulance.png' />
-          <Guidances numb='15' guideName='Hospital' guideImg='imges/Ambulance.png' />
-          <Guidances numb='18' guideName='Hospital' guideImg='imges/Ambulance.png' />
-          <Guidances numb='19' guideName='Hospital' guideImg='imges/Ambulance.png' />
-          <Guidances numb='13' guideName='Hospital' guideImg='imges/Ambulance.png' />
-          <Guidances numb='13' guideName='Hospital' guideImg='imges/Ambulance.png' /> */}
+                {/* <Guidances numb='13' guideName='Hospital' guideImg='/imges/Ambulance.png' />
+          <Guidances numb='15' guideName='Hospital' guideImg='/imges/Ambulance.png' />
+          <Guidances numb='18' guideName='Hospital' guideImg='/imges/Ambulance.png' />
+          <Guidances numb='19' guideName='Hospital' guideImg='/imges/Ambulance.png' />
+          <Guidances numb='13' guideName='Hospital' guideImg='/imges/Ambulance.png' />
+          <Guidances numb='13' guideName='Hospital' guideImg='/imges/Ambulance.png' /> */}
 
                 {/*//////////gma//////////////data calling by mapping ///////////////////////*/}
                 {GuidDataShow}

@@ -6,7 +6,7 @@ export default function ContactPage() {
     return (
         <div>
             <NavBarContact />
-            <HeaderGreenBackground img='imges/ContactUs.png' />
+            <HeaderGreenBackground img='/imges/ContactUs.png' />
             <div style={{ width: '90%', margin: '0 auto', paddingBottom: '37px' }}>
                 <Button btnName="Send" />
             </div>

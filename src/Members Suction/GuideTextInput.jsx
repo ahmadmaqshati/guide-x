@@ -1,6 +1,6 @@
 
 
-export default function Inputs(props) {
+export default function GuideTextInput(props) {
     return (
         <div style={{ display: 'flex', flexDirection: "column", gap: '5px' }}>
             <label htmlFor="x">{props.label}</label>

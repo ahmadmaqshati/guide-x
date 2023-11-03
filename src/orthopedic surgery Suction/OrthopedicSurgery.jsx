@@ -1,9 +1,9 @@
-import Clinics from "./Clinics"
+import DrCard from "./Clinics"
 import { ClinicData } from "./ClinicData"
 import NavBar from "../home suction/NavBar"
 import HeaderGreenBackground from "../About Suction/HeaderGreenBackground"
 import SpecializationCategory from "../home suction/SpecializationCategory"
-import Inputs from "../home suction/Inputs";
+import SearchAndFilters from "../home suction/SearchAndFilters";
 import Button from "../home suction/Button"
 import Footer from "../home suction/Footer"
 
@@ -11,7 +11,7 @@ export default function OrthopedicSurgery() {
 
     const clinicsDataShow = ClinicData.map(function (ClinicDataKey) {
         return (
-            <Clinics DrImg={ClinicDataKey.DrImg} DrName={ClinicDataKey.DrName} specialization={ClinicDataKey.specialization} place={ClinicDataKey.place} arrow={ClinicDataKey.arrow} key={ClinicDataKey.id} map={ClinicDataKey.map} />
+            <DrCard link={ClinicDataKey.link} DrImg={ClinicDataKey.DrImg} DrName={ClinicDataKey.DrName} specialization={ClinicDataKey.specialization} place={ClinicDataKey.place} arrow={ClinicDataKey.arrow} key={ClinicDataKey.id} map={ClinicDataKey.map} />
         )
     })
 
@@ -19,9 +19,9 @@ export default function OrthopedicSurgery() {
         <div>
             <NavBar />
             <div style={{ marginBottom: '25px' }}>
-                <HeaderGreenBackground img='imges/OrthopidecSurgery.png' />
+                <HeaderGreenBackground img='/imges/OrthopidecSurgery.png' />
             </div>
-            <Inputs />
+            <SearchAndFilters />
             <div style={{ width: '90%', margin: '0 auto', paddingBottom: '38px' }}>
                 <Button btnName="Search" />
             </div>

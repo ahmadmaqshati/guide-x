@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom"
-export default function Guidances(props) {
+export default function CategoryCard(props) {
     return (
 
-        <Link to='/hospitals' style={{ textDecoration: 'none', color: 'inherit' }}>
+        <Link to={props.link} style={{ textDecoration: 'none', color: 'inherit' }}>
             <div style={{
                 border: '0.1px solid #E2E2E8', width: '163px', display: 'flex', justifyContent: 'space-between', alignItems: 'center'
                 , borderRadius: '15px', padding: '10px 0', marginBottom: '1px'

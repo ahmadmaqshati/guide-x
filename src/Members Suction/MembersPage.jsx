@@ -5,7 +5,7 @@ import MemberShipStatus from "./MemberShipStatus"
 /* import PesonalInfo from "./PersonalAndWorkInfoAndContactsAndFamilyData" */
 import PersonalAndWorkInfoAndContactsAndFamilyData from "./PersonalAndWorkInfoAndContactsAndFamilyData"
 import CallingInputs from "./CallingInputs"
-import Inputs from "./Inputs"
+import GuideTextInput from "./GuideTextInput"
 import TextArea from "./TextArea"
 
 import Footer from "../home suction/Footer"
@@ -15,11 +15,35 @@ export default function MembersPage() {
         <div>
             <NavBar />
             <div style={{ marginBottom: '30px' }}>
-                <HeaderGreenBackground img='imges/MemberShip.png' />
+                <HeaderGreenBackground img='/imges/MemberShip.png' />
             </div>
             <div style={{ width: '90%', margin: '0 auto', paddingBottom: '37px' }}>
 
-                <MemberShipStatus title='Membership status' img="imges/Member.png" Circal1='imges/Circal1.png' Circal2='imges/Circal2.png' Case1='individual' Case2='Family' />
+        {/*
+                <MemberShipStatus title='Membership status' img="imges/Member.png" Circal1='/imges/Circal1.png' Circal2='/imges/Circal2.png' Case1='individual' Case2='Family' />
+                */}
+
+
+        <div style={{
+          width: '100%', 
+          margin: '0 auto', 
+          display: 'flex',
+          justifyContent: 'flex-start',
+          alignItems: 'center',
+        }}>
+          <div>
+            <input id="individual" type="radio" name="individual" value="individual" style={{ accentColor: '#1a705a' }} />
+            <label for="individual" style={{ paddingLeft: '10px' }}>
+              individual
+            </label>
+          </div>
+          <div style={{ paddingLeft: '80px' }}>
+            <input id="family" type="radio" name="family" value="family" style={{ accentColor: '#1a705a' }} />
+            <label for="family"  style={{ paddingLeft: '10px' }}>
+              Family
+            </label>
+          </div>
+        </div>
 
             </div>
             <hr style={{ border: '1px solid #EBEBEC', marginBottom: '40px' }} />
@@ -37,9 +61,9 @@ export default function MembersPage() {
                 </div>
             </div>
             <div style={{ width: '90%', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '22px', marginBottom: '33px' }}>
-                <Inputs P='Enter your jop' label='Jop' />
-                <Inputs P='Enter company name' label='Company Name' />
-                <Inputs P='Enter your job address' label='Job Address' />
+                <GuideTextInput P='Enter your jop' label='Jop' />
+                <GuideTextInput P='Enter company name' label='Company Name' />
+                <GuideTextInput P='Enter your job address' label='Job Address' />
             </div>
 
             <hr style={{ border: '1px solid #EBEBEC', marginBottom: '40px' }} />
@@ -49,9 +73,9 @@ export default function MembersPage() {
                 </div>
             </div>
             <div style={{ width: '90%', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '22px', marginBottom: '44px' }}>
-                <Inputs P='Enter your phone number' label='Phone Number' />
-                <Inputs P='Enter your home number' label='Home Number' />
-                <Inputs P='Enter your email' label='Email' />
+                <GuideTextInput P='Enter your phone number' label='Phone Number' />
+                <GuideTextInput P='Enter your home number' label='Home Number' />
+                <GuideTextInput P='Enter your email' label='Email' />
             </div>
 
             <hr style={{ border: '1px solid #EBEBEC', marginBottom: '40px' }} />
@@ -61,11 +85,11 @@ export default function MembersPage() {
                 </div>
             </div>
             <div style={{ width: '90%', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '22px', marginBottom: '33px' }}>
-                <Inputs P='Enter name' label='Name' />
-                <Inputs P='Enter age' label='Age' />
-                <Inputs P='Enter national id' label='National ID*' />
+                <GuideTextInput P='Enter name' label='Name' />
+                <GuideTextInput P='Enter age' label='Age' />
+                <GuideTextInput P='Enter national id' label='National ID*' />
                 <TextArea label=' National ID Image*' />
-                <Inputs P='Enter relationship' label='Relationship*' />
+                <GuideTextInput P='Enter relationship' label='Relationship*' />
 
             </div>
 

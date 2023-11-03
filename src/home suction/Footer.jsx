@@ -30,7 +30,7 @@ export default function Footer() {
 
 
                         {/*===========================Membership=====================*/}
-                        <li><Link to='/members' style={{ textDecoration: 'none', color: '#FCFCFC', display: 'block', paddingBottom: '5px' }}>Membership</Link></li>
+                        <li><Link to='/membership' style={{ textDecoration: 'none', color: '#FCFCFC', display: 'block', paddingBottom: '5px' }}>Membership</Link></li>
                         {/*=========================Membership=======================*/}
 
 
@@ -47,7 +47,7 @@ export default function Footer() {
 
 
                         {/*==========================Terms=======================*/}
-                        <li><a href="#" style={{ textDecMembershiporation: 'none', color: '#FCFCFC' }}>Terms</a></li>
+                        <li><a href="#" style={{ textDecoration: 'none', color: '#FCFCFC' }}>Terms</a></li>
                         {/*==========================Terms=======================*/}
                     </ul>
 
@@ -80,7 +80,7 @@ export default function Footer() {
 
                 {/* Nasted-Componant : FooterIcons Componant Calling into Footer Componant   */}
 
-                <FooterIcons Instagram='imges/Instagram.png' In='imges/In.png' Face=' imges/Face.png' Tweeter="imges/Tweeter.png" />
+                <FooterIcons Instagram='/imges/Instagram.png' In='/imges/In.png' Face=' imges/Face.png' Tweeter="imges/Tweeter.png" />
 
 
 

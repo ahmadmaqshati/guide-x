@@ -13,7 +13,7 @@ export default function AboutPage() {
 
         <div>
             <AboutNavBar />
-            <HeaderGreenBackground img='imges/AboutUs.png' />
+            <HeaderGreenBackground img='/imges/AboutUs.png' />
             <AboutText />
             <CardsContainer />
             <div style={{
