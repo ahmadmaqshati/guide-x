@@ -29,8 +29,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path='/contact' element={<ContactPage />} />
         <Route path='/membership' element={<MembersPage />} />
         <Route path='/guide' element={<GuidePage />} />
+        <Route path='/hospitals/:hospitalName' element={<AlexCareHospitalPage />} />
         <Route path='/hospitals' element={<HospitalsPage />} />
-        <Route path='/alexcarehospital' element={<AlexCareHospitalPage />} />
+
         <Route path='/clinic' element={<Clinic />} />
         <Route path='/orthopedicsurgery' element={<OrthopedicSurgery />} />
         <Route path='/drdetailspage' element={<DrDetailsPage />} />
