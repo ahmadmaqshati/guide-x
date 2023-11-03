@@ -55,7 +55,7 @@ export default function Footer() {
 
 
 
-                <img src="imges/Contact Us.png" alt="" style={{ paddingBottom: '15px' }} />
+                <img src="/imges/Contact Us.png" alt="" style={{ paddingBottom: '15px' }} />
 
                 {/*=======================Location(Phone-Email)=======================*/}
                 <ul style={{ listStyle: 'none', paddingBottom: '40px' }}>
@@ -65,12 +65,12 @@ export default function Footer() {
                     {/*============================Location==========================*/}
 
                     {/*============================Phone==========================*/}
-                    <li style={{ display: 'flex', alignItems: 'center', paddingBottom: '10px' }}><img src="imges/b.png" alt="" /><a href="#" style={{ color: '#E6E6E6', textDecoration: 'none', paddingLeft: '7px', fontSize: '14px', paddingTop: '3px' }}>+088(246)642-27-10</a></li>
+                    <li style={{ display: 'flex', alignItems: 'center', paddingBottom: '10px' }}><img src="/imges/b.png" alt="" /><a href="#" style={{ color: '#E6E6E6', textDecoration: 'none', paddingLeft: '7px', fontSize: '14px', paddingTop: '3px' }}>+088(246)642-27-10</a></li>
                     {/*============================Phone==========================*/}
 
 
                     {/*============================Email==========================*/}
-                    <li><img src="imges/c.png" alt="" /><a href="#" style={{ color: '#E6E6E6', textDecoration: 'none', paddingLeft: '7px', fontSize: '14px' }}>example@gmail.com</a></li>
+                    <li><img src="/imges/c.png" alt="" /><a href="#" style={{ color: '#E6E6E6', textDecoration: 'none', paddingLeft: '7px', fontSize: '14px' }}>example@gmail.com</a></li>
                     {/*============================Email==========================*/}
                 </ul>
                 {/*=======================Location-Phone-Email=======================*/}
@@ -80,7 +80,7 @@ export default function Footer() {
 
                 {/* Nasted-Componant : FooterIcons Componant Calling into Footer Componant   */}
 
-                <FooterIcons Instagram='/imges/Instagram.png' In='/imges/In.png' Face=' imges/Face.png' Tweeter="imges/Tweeter.png" />
+                <FooterIcons Instagram='/imges/Instagram.png' In='/imges/In.png' Face='/imges/Face.png' Tweeter="/imges/Tweeter.png" />
 
 
 
